@@ -282,8 +282,10 @@ preg_replace('/and/',"",$sql)
 
 *资料:*
 
-[Mysql注入天书][7]
-[不知道叫什么名字但超级有用的注入手册][8]
+[Mysql注入天书][7] 
+
+[不知道叫什么名字但超级有用的注入手册][8] 
+
 [代码审计-SQLI挖掘实例系列（经典）][9]
 
   [1]: https://www.waitalone.cn/mysql-error-based-injection.html
